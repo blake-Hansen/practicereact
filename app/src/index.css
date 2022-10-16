@@ -1,0 +1,33 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body{
+  font-family: sans-serif;
+  background: teal;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 15px;
+  margin: 225px;
+  padding: 5px;
+  width: 350px;
+}
+
+p{
+  color:salmon;
+  margin:5px;
+}
+
+img{
+  width:200px;
+  height:200px;
+}
