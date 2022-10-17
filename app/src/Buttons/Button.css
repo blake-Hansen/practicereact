@@ -14,6 +14,11 @@
     background-color: white;
     border-radius: 10px;
     margin: 5px;
+   
+}
 
+.card{
+    background-color:  #Eeedeb;
+    box-shadow: 12px 12px #D8d6d3
 
 }

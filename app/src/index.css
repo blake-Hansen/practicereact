@@ -7,7 +7,7 @@
 
 body{
   font-family: sans-serif;
-  background: teal;
+  background: gainsboro;
 }
 
 .card {
@@ -15,7 +15,8 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: solid black 2px;
+  /* border: solid black 2px; */
+  background-color:white;
   border-radius: 15px;
   margin: 225px;
   padding: 5px;

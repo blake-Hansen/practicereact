@@ -28,14 +28,14 @@ function BookList() {
         
         {books.map( (book) => {
           const {img, title, author} = book;
-          return <Book book={book}></Book>
+          return <Book key={Math.random()} book={book}></Book>
         })}
       </section>
   )
 }
 
 const Book = (props) => {
-  const [size, setSize] = useState(10);
+  const [size, setSize] = useState(30);
   const {img, title, author} = props.book;
   
   
