@@ -1,0 +1,19 @@
+/* .Buttons {
+
+} */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+.butt{
+    width: 80px;
+    height: 30px;
+    color: Black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+
+
+}

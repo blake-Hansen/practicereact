@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css'
+import Buttonz from './Buttons/Button.js'
+import {useState} from 'react'
 
 const firstBook = {
   img:"https://www.nbcsports.com/sites/nbcsports.com/files/styles/more_top_stories_small/public/2022/10/16/gettyimages-1433863816-e1665947641404.jpg?itok=d7AeVB5E&timestamp=1665948364",
@@ -19,9 +21,13 @@ const secondBook = {
 
 
 function BookList() {
+  const [size, setSize] = useState(10);
+  
   return (
       <section>
-        <Book title={firstBook.title} author={firstBook.author} img={firstBook.img} job='developer'/>
+        <Book title={firstBook.title} author={firstBook.author} img={firstBook.img} job='developer'>
+         <p>Lorem Ipsom</p>
+          </Book>
         <Book title={secondBook.title} author={secondBook.author} img={secondBook.img} />       
       </section>
   )
@@ -29,17 +35,18 @@ function BookList() {
 
 
 
-const Book = (props) => {
-  const {img, title, author} = props;
+const Book = ({img, author, title, children}) => {
+  // const {img, title, author} = props;
   return (
     <article className="card">
       <h1>{title}</h1>
       <p>{author.toUpperCase()}</p>
-      {/* let x = 6 */}
+      {children}
       <img 
       src={img}
       alt="men"
        />
+       <Buttonz />
     </article>
   )
 };
