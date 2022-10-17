@@ -9,8 +9,6 @@ const Buttons = (props) => {
             <button onClick={props.addHandler} className="butt" >BIG</button>
         </div>
     )
-
-
 }
 
 
