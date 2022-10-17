@@ -1,12 +1,12 @@
 import './Button.css'
 
 
-const Buttons = () => {
+const Buttons = (props) => {
 
     return (
         <div className="Buttons" >
-            <button className="butt">BIG</button>
-            <button className="butt" >SMALL</button>
+            <button onClick={props.minusHandler} className="butt">SMALL</button>
+            <button onClick={props.addHandler} className="butt" >BIG</button>
         </div>
     )
 
