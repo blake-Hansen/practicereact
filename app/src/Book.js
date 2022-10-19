@@ -15,11 +15,7 @@ const Book = ({img, title, author}) => {
     const smallHandler = () => {
       setSize(size - 5)
     }
-  
-      const clickHandler = (e) => {
-        console.log(e.target.value)
-        alert("Hello")
-      }
+
   
       const complexHandler = (author) => {
           console.log(author)
@@ -28,8 +24,8 @@ const Book = ({img, title, author}) => {
       <article className="card" >
         <h1 onMouseOver={()=> setTitleColor("blue")} onClick={()=> console.log(title)}style={{fontSize:`${size}px`, color:`${titleColor}`}}>{title}</h1>
         <p>{author.toUpperCase()}</p>
-        <button type="button" onClick={clickHandler}>ALERT</button>
-        <button type="button" onClick={() => complexHandler(author)}>COMPLEX</button>
+       
+        <button type="button" onClick={() => complexHandler(author)}>Print Title</button>
         <img 
         src={img}
         alt="men"
