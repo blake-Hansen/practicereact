@@ -4,6 +4,7 @@ import {useState} from 'react'
 
 
 const Book = ({img, title, author}) => {
+ 
     const [size, setSize] = useState(30);
     const [titleColor, setTitleColor] = useState("black");
     
@@ -16,6 +17,8 @@ const Book = ({img, title, author}) => {
       setSize(size - 5)
     }
 
+    
+
     return (
       <article className="card" >
         <h1 onMouseOver={()=> setTitleColor("blue")} onClick={()=> console.log(title)}style={{fontSize:`${size}px`, color:`${titleColor}`}}>{title}</h1>
@@ -25,6 +28,7 @@ const Book = ({img, title, author}) => {
         alt="men"
          />
          <Buttonz addHandler={bigHandler} minusHandler={smallHandler}/>
+        
       </article>
     )
   };

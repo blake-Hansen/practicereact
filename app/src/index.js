@@ -10,11 +10,13 @@ import { books } from './books.js'
 
 
 function BookList() {
+  
   return (
     <section className="temp">  
         {books.map( (book) => {         
-          return <Book key={Math.random()} {...book}></Book>
+          return <Book key={books.keys} {...book}></Book>
         })}
+        
       </section>
   )
 }
